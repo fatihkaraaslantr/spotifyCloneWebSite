@@ -7,18 +7,25 @@ const options = {
 };
 
 export class API {
-  //api istek
+  //**Api istek
   async getPopular() {
-    const url = "https://shazam.p.rapidapi.com/search?term=eminem";
+    // const url = "https://shazam.p.rapidapi.com/search?term=eminem";
 
-    const response = await fetch(url, options);
-    const data = await response.json();
+    // const response = await fetch(url, options);
+    // const data = await response.json();
 
-    const formattedData = data.tracks.hits.map((item) => item.track);
-    return formattedData;
+    // const formattedData = data.tracks.hits.map((item) => item.track);
+    // return formattedData;
+
+    //burayı başlandıçta ekran zengin dursun diye yaptım.
+    const data1 = await this.searchMusic("eminem");
+    const data2 = await this.searchMusic("ahiyan");
+    const data3 = await this.searchMusic("neffex");
+
+    return [...data1, ...data2, ...data3];
   }
 
-  //aratılan şarkı verisini çekme..
+  //**Aratılan şarkı verisini çekme..
   async searchMusic(query) {
     const url = `https://shazam.p.rapidapi.com/search?term=${query}`;
 

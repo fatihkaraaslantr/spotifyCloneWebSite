@@ -111,6 +111,9 @@ main {
               scale: 1.1;
               rotate: 360deg;
             }
+            i {
+              pointer-events: none;
+            }
           }
         }
         .card-info {
