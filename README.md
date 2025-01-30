@@ -1,3 +1,3 @@
-<h1>Spotify Clone</h1>
+<h1>Spotify Clonee</h1>
 
 
