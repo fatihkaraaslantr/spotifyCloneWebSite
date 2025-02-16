@@ -1,9 +1,9 @@
 const options = {
-  method: "GET",
-  headers: {
-    "x-rapidapi-key": "648dda15b6msh1f39168b70d7fa6p1b7877jsn3537f2980da4",
-    "x-rapidapi-host": "shazam.p.rapidapi.com",
-  },
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '648dda15b6msh1f39168b70d7fa6p1b7877jsn3537f2980da4',
+		'x-rapidapi-host': 'shazam.p.rapidapi.com'
+	}
 };
 
 export class API {
